@@ -1,0 +1,16 @@
+|Alarmas
+iar => arob~3.IN1
+iig => arob~0.IN0
+sm1 => arob~1.IN1
+sm2 => arob~2.IN1
+sifr => arob~0.IN1
+shumo => ainc~0.DATAIN
+sco => aco~0.DATAIN
+shume => ahume~0.DATAIN
+arob <= comb~5
+ainc <= ainc~0
+ahume <= ahume~0
+aco <= aco~0
+aenc <= comb~0
+
+
