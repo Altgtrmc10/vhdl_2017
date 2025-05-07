@@ -1,0 +1,520 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 18:06:20 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Nov 10 10:11:34 2017
+# Process ID: 7928
+# Log file: C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.runs/synth_1/reloj_digital.vds
+# Journal file: C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source reloj_digital.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_mod_60.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_mux.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_mod_24.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk200Hz.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_reloj_automatico.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk1Hz.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_reloj_manual.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk2Hz.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_completo.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk4Hz.vhd
+#   C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/reloj_digital.vhd
+# }
+# read_xdc C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.srcs/constrs_1/new/Pines.xdc
+# set_property used_in_implementation false [get_files C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.srcs/constrs_1/new/Pines.xdc]
+# catch { write_hwdef -file reloj_digital.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top reloj_digital -part xc7a100tcsg324-1
+Command: synth_design -top reloj_digital -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:01:02 . Memory (MB): peak = 417.574 ; gain = 71.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'reloj_digital' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/reloj_digital.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'clk1Hz' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk1Hz.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'clk1Hz' (1#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk1Hz.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'clk2Hz' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk2Hz.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'clk2Hz' (2#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk2Hz.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'clk4Hz' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk4Hz.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'clk4Hz' (3#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk4Hz.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'contador_reloj_automatico' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_reloj_automatico.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'contador_mod_60' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_mod_60.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'contador_mod_60' (4#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_mod_60.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'contador_mod_24' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_mod_24.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'contador_mod_24' (5#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_mod_24.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'contador_reloj_automatico' (6#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_reloj_automatico.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'contador_reloj_manual' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_reloj_manual.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'contador_reloj_manual' (7#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/contador_reloj_manual.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'siete_segmentos_4bits_completo' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_completo.vhd:15]
+INFO: [Synth 8-3491] module 'clk200Hz' declared at 'C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk200Hz.vhd:4' bound to instance 'clk_i' of component 'clk200Hz' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_completo.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'clk200Hz' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk200Hz.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'clk200Hz' (8#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/clk200Hz.vhd:10]
+INFO: [Synth 8-3491] module 'siete_segmentos_4bits_mux' declared at 'C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_mux.vhd:4' bound to instance 'mux_i' of component 'siete_segmentos_4bits_mux' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_completo.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'siete_segmentos_4bits_mux' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_mux.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'siete_segmentos_4bits_mux' (9#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_mux.vhd:15]
+INFO: [Synth 8-3491] module 'siete_segmentos_4bits' declared at 'C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits.vhd:5' bound to instance 'seg_i' of component 'siete_segmentos_4bits' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_completo.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'siete_segmentos_4bits' [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits.vhd:10]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'siete_segmentos_4bits' (10#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'siete_segmentos_4bits_completo' (11#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/siete_segmentos_4bits_completo.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'reloj_digital' (12#1) [C:/Users/Sar/Downloads/ef-reloj-digital-p5-final/reloj_digital.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:01:05 . Memory (MB): peak = 441.605 ; gain = 95.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:01:06 . Memory (MB): peak = 441.605 ; gain = 95.734
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.srcs/constrs_1/new/Pines.xdc]
+Finished Parsing XDC File [C:/Users/Sar/Downloads/Proyecto/Reloj_Digital.srcs/constrs_1/new/Pines.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 670.363 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:01:33 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:01:33 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:33 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+ROM "temporal" won't be mapped to RAM because address size (26) is larger than maximum supported(18) 
+ROM "temporal" won't be mapped to RAM because address size (25) is larger than maximum supported(18) 
+ROM "temporal" won't be mapped to RAM because address size (24) is larger than maximum supported(18) 
+ROM "temporal" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'siete_segmentos_4bits_mux'
+ROM "MUX" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "estado" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "aload_m" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'one-hot' in module 'siete_segmentos_4bits_mux'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:34 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 10    
++---Registers : 
+	               26 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 63    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module reloj_digital 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+Module clk1Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk2Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk4Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module contador_mod_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 1     
+Module contador_mod_24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 1     
+Module contador_reloj_automatico 
+Detailed RTL Component Info : 
+Module contador_reloj_manual 
+Detailed RTL Component Info : 
+Module clk200Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module siete_segmentos_4bits_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+Module siete_segmentos_4bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module siete_segmentos_4bits_completo 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:01:34 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "c1h_i/temporal" won't be mapped to RAM because address size (26) is larger than maximum supported(18) 
+ROM "c2h_i/temporal" won't be mapped to RAM because address size (25) is larger than maximum supported(18) 
+ROM "c4h_i/temporal" won't be mapped to RAM because address size (24) is larger than maximum supported(18) 
+ROM "seg_i/clk_i/temporal" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3917] design reloj_digital has port seg[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:34 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:32 ; elapsed = 00:01:34 . Memory (MB): peak = 670.363 ; gain = 324.492
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_1 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_3 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_4 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_5 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_7 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_8 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_9 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_seg/i_10 ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_u_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_u_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_u_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_u_reg[0] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_d_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_d_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_d_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_min/cnt_tmp_d_reg[0] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_u_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_u_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_u_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_u_reg[0] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_d_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_d_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_d_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_a_i/contador_hr/cnt_tmp_d_reg[0] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_u_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_u_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_u_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_u_reg[0] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_d_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_d_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_d_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_min/cnt_tmp_d_reg[0] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_u_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_u_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_u_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_u_reg[0] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_d_reg[3] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_d_reg[2] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_d_reg[1] ) is unused and will be removed from module reloj_digital.
+WARNING: [Synth 8-3332] Sequential element (\cnt_m_i/contador_hr/cnt_tmp_d_reg[0] ) is unused and will be removed from module reloj_digital.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:36 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:36 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:01:36 . Memory (MB): peak = 670.363 ; gain = 324.492
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:01:36 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:02:08 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:02:08 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:02:09 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:02:10 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:02:10 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:02:10 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    97|
+|4     |LUT2   |    27|
+|5     |LUT3   |    51|
+|6     |LUT4   |    46|
+|7     |LUT5   |   110|
+|8     |LUT6   |   109|
+|9     |FDCE   |   146|
+|10    |FDPE   |    41|
+|11    |FDRE   |     4|
+|12    |LDC    |    32|
+|13    |IBUF   |     6|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------------------------+------+
+|      |Instance         |Module                         |Cells |
++------+-----------------+-------------------------------+------+
+|1     |top              |                               |   711|
+|2     |  c1h_i          |clk1Hz                         |    91|
+|3     |  c2h_i          |clk2Hz                         |    86|
+|4     |  c4h_i          |clk4Hz                         |    83|
+|5     |  cnt_a_i        |contador_reloj_automatico      |   174|
+|6     |    contador_hr  |contador_mod_24_0              |    81|
+|7     |    contador_min |contador_mod_60_1              |    72|
+|8     |    contador_seg |contador_mod_60_2              |    21|
+|9     |  cnt_m_i        |contador_reloj_manual          |   147|
+|10    |    contador_hr  |contador_mod_24                |    76|
+|11    |    contador_min |contador_mod_60                |    71|
+|12    |  seg_i          |siete_segmentos_4bits_completo |    90|
+|13    |    clk_i        |clk200Hz                       |    63|
+|14    |    mux_i        |siete_segmentos_4bits_mux      |    20|
+|15    |    seg_i        |siete_segmentos_4bits          |     7|
++------+-----------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:02:10 . Memory (MB): peak = 670.363 ; gain = 324.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:58 . Memory (MB): peak = 670.363 ; gain = 52.621
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:02:10 . Memory (MB): peak = 670.363 ; gain = 324.492
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LDC => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:21 . Memory (MB): peak = 670.363 ; gain = 284.469
+# write_checkpoint -noxdef reloj_digital.dcp
+# catch { report_utilization -file reloj_digital_utilization_synth.rpt -pb reloj_digital_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.670 . Memory (MB): peak = 670.363 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 10:15:30 2017...
